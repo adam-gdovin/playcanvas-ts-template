@@ -1,0 +1,24 @@
+{
+  "name": "playcanvas-ts-template",
+  "version": "1.0.0",
+  "description": "Playcanvas TypeScript template with playcavnas-sync",
+  "main": "build/bundle.js",
+  "scripts": {
+    "push": "node node_modules/playcanvas-sync/pcsync.js pushAll --yes",
+    "watch:webpack": "webpack",
+    "watch-push:webpack": "webpack --config webpack.config.push.js",
+  },
+  "author": "Adam Gdovin",
+  "license": "ISC",
+  "devDependencies": {
+    "glob": "^8.0.3",
+    "playcanvas": "^1.55.4",
+    "playcanvas-sync": "git+https://github.com/adam-gdovin/playcanvas-sync.git",
+    "playcanvas-tween": "git+https://github.com/playcanvas/playcanvas-tween.git",
+    "ts-loader": "^9.4.1",
+    "typescript": "^4.7.4",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.0",
+    "webpack-shell-plugin-next": "^2.3.1"
+  },
+}
